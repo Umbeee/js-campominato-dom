@@ -43,10 +43,11 @@ function campoMinato(){
         divCella.addEventListener('click', function(){
             console.log(this.innerText)
             
-            contatore = contatore + 1;
+            
 
             if( !bombe.includes(i)){
                 this.classList.add('clicked')
+                contatore = contatore + 1;
             }else{
                 this.classList.add('clicked-bomb')
                 let banner = document.createElement('div');
@@ -61,7 +62,7 @@ function campoMinato(){
                 btnRestart.addEventListener('click', function(){
 
                     htmlMain.innerHTML = '';
-                    
+
                 })
 
                 banner.append(btnRestart);
