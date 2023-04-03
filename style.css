@@ -1,0 +1,82 @@
+:root{
+    --numCelle: 10;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    align-items: center;
+    padding: 20px;
+}
+
+main{
+    background-color: rgb(226,229,223);
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* griglia */
+.griglia{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(43, 43, 43);
+    width: 600px;
+    height: 600px;
+    box-shadow: 10px 5px 5px rgb(43, 43, 43);
+}
+
+.item{
+    border: 1px solid rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / var(--numCelle));
+    height: calc(100% / var(--numCelle));
+}
+
+.clicked{
+    background-color: rgb(139,231,139);
+}
+
+.clicked-bomb{
+    background-color: rgb(223,27,50);
+}
+
+.banner{
+    position: absolute;
+    top: 30vh;
+    left: 390px;
+    right: 390px;
+    background-color: rgba(230,28,52, 0.805);
+    color: white;
+    height: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-select{
+    width: 120px;
+}
+
+#counter{
+
+}
